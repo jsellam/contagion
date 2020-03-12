@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a4830337d24d3df6021d7766f082f165",
+    "revision": "0ae124e694e926f4b87fb3dc1391d73e",
     "url": "/contagion/index.html"
   },
   {
-    "revision": "f8b5dab8c1187bc22a34",
+    "revision": "9e0c01f7a483de979331",
     "url": "/contagion/static/css/main.982a9e7c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/contagion/static/js/2.2287eea7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f8b5dab8c1187bc22a34",
-    "url": "/contagion/static/js/main.7e9f0eab.chunk.js"
+    "revision": "9e0c01f7a483de979331",
+    "url": "/contagion/static/js/main.00afe91b.chunk.js"
   },
   {
     "revision": "18a4c2f69257d3d1b8f9",

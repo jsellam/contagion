@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/contagion/static/css/main.982a9e7c.chunk.css",
-    "main.js": "/contagion/static/js/main.7e9f0eab.chunk.js",
-    "main.js.map": "/contagion/static/js/main.7e9f0eab.chunk.js.map",
+    "main.js": "/contagion/static/js/main.00afe91b.chunk.js",
+    "main.js.map": "/contagion/static/js/main.00afe91b.chunk.js.map",
     "runtime-main.js": "/contagion/static/js/runtime-main.2b1a25b3.js",
     "runtime-main.js.map": "/contagion/static/js/runtime-main.2b1a25b3.js.map",
     "static/js/2.2287eea7.chunk.js": "/contagion/static/js/2.2287eea7.chunk.js",
     "static/js/2.2287eea7.chunk.js.map": "/contagion/static/js/2.2287eea7.chunk.js.map",
     "index.html": "/contagion/index.html",
-    "precache-manifest.9202bf3ff42fe75e7068cd7d7b829bae.js": "/contagion/precache-manifest.9202bf3ff42fe75e7068cd7d7b829bae.js",
+    "precache-manifest.caf2cde99ee6e0f36453f88a518bce76.js": "/contagion/precache-manifest.caf2cde99ee6e0f36453f88a518bce76.js",
     "service-worker.js": "/contagion/service-worker.js",
     "static/css/main.982a9e7c.chunk.css.map": "/contagion/static/css/main.982a9e7c.chunk.css.map",
     "static/js/2.2287eea7.chunk.js.LICENSE.txt": "/contagion/static/js/2.2287eea7.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.2b1a25b3.js",
     "static/js/2.2287eea7.chunk.js",
     "static/css/main.982a9e7c.chunk.css",
-    "static/js/main.7e9f0eab.chunk.js"
+    "static/js/main.00afe91b.chunk.js"
   ]
 }
