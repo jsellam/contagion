@@ -20,7 +20,8 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build && cp -a ./build/. ./docs/",
+    "build": "react-app-rewired build",
+    "deploy": "react-app-rewired build && gh-pages -d build",
     "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject"
   },
@@ -36,6 +37,7 @@
   "devDependencies": {
     "babel-plugin-transform-decorators-legacy": "^1.3.5",
     "customize-cra": "^0.9.1",
+    "gh-pages": "^2.2.0",
     "react-app-rewired": "^2.1.5",
     "redux-devtools-extension": "^2.13.8"
   }

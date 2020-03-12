@@ -16,7 +16,7 @@ class Stats extends React.PureComponent {
 
 
   constructor(props) {
-    console.log('canvasjs',CanvasJS)
+
     super(props)
     this.state = {
       totalPopulation:70000000,
@@ -74,21 +74,21 @@ class Stats extends React.PureComponent {
         malades:2000,
         remis:200,
         morts:50,
-        saints:totalPopulation - 2000 - 200 - 50
+        sains:totalPopulation - 2000 - 200 - 50
       }
     ]
     for(var i=1;i<180;i++) {
       let prev = result[i-1]
-      let malades = prev.malades + prev.malades * dailyContact * probability * (prev.saints /totalPopulation ) - (1/duration)*prev.malades  - (mortality/duration)*prev.malades
+      let malades = prev.malades + prev.malades * dailyContact * probability * (prev.sains /totalPopulation ) - (1/duration)*prev.malades  - (mortality/duration)*prev.malades
       console.log('malades',i,malades)
       let remis = prev.remis+(1/duration)*prev.malades
       let morts = prev.morts+(mortality/duration)*prev.malades
-      let saints = totalPopulation-malades-remis-morts
+      let sains = totalPopulation-malades-remis-morts
       result.push({
         malades,
         remis,
         morts,
-        saints
+        sains
       })
     }
 
@@ -111,7 +111,7 @@ class Stats extends React.PureComponent {
           type:"spline",
           showInLegend:true,
           name:"Sains",
-          dataPoints:result.map(({saints}, index)=> ({label:'j'+index, y:Math.floor(saints)}))
+          dataPoints:result.map(({sains}, index)=> ({label:'j'+index, y:Math.floor(sains)}))
         },
         {
           type:"spline",
