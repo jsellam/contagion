@@ -1,0 +1,38 @@
+$phone: 768px;
+$tablet: 1024px;
+
+@mixin upTo($size) {
+  @media (min-width: $size +1px) { @content ; }
+}
+
+@mixin downTo($size) {
+  @media (max-width: $size) { @content ; }
+}
+
+@mixin betweenTo($minSize, $maxSize) {
+  @media (min-width: $minSize +1px) and (max-width:$maxSize) { @content ; }
+}
+
+@mixin phone {
+  @include downTo ($phone) {
+    @content ;
+  }
+}
+
+@mixin tablet {
+  @include betweenTo ($phone, $tablet) {
+    @content ;
+  }
+}
+
+@mixin mobile {
+  @include downTo ($tablet) {
+    @content ;
+  }
+}
+
+@mixin desktop {
+  @include upTo ($tablet) {
+    @content ;
+  }
+}

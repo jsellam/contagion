@@ -1,0 +1,20 @@
+$font-path: '/assets/fonts/';
+
+@mixin font-face($font-family) {
+	@font-face {
+		font-family: '#{$font-family}';
+		src: url('#{$font-path}#{$font-family}/#{$font-family}.eot');
+		src: url('#{$font-path}#{$font-family}/#{$font-family}.eot?#iefix') format('embedded-opentype'),
+		     url('#{$font-path}#{$font-family}/#{$font-family}.woff') format('woff'),
+		     url('#{$font-path}#{$font-family}/#{$font-family}.ttf') format('truetype'),
+		     url('#{$font-path}#{$font-family}/#{$font-family}.svg') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+}
+
+$BigNoodleTitling: "BigNoodleTitling";
+@include font-face($BigNoodleTitling);
+
+$fontello: "fontello";
+@include font-face($fontello);
